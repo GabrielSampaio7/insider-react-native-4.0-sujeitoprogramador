@@ -1,27 +1,25 @@
 import React from 'react';
 import { createDrawerNavigator } from '@react-navigation/drawer';
-import StackRoutes from './stackRoutes';
-import Movies from '../pages/Movies';
 import { MaterialCommunityIcons } from '@expo/vector-icons';
+
+import Movies from '../pages/Movies';
+import StackRoutes from './stackRoutes';
 
 const Drawer = createDrawerNavigator();
 
 function Routes() {
-
     return (
         <Drawer.Navigator
             screenOptions={{
                 headerShown: false,
                 drawerStyle: {
                     backgroundColor: '#090A0E',
-                    paddingTop: 20
+                    paddingTop: 20,
                 },
-
                 drawerActiveBackgroundColor: '#E72F49',
                 drawerActiveTintColor: '#FFF',
-                drawerInactiveTintColor: '#FFF'
+                drawerInactiveTintColor: '#FFF',
             }}
-
         >
             <Drawer.Screen
                 name="HomeDrawer"
@@ -34,12 +32,12 @@ function Routes() {
                             size={size}
                             color={color}
                         />
-                    )
+                    ),
                 }}
             />
             <Drawer.Screen
                 name="Movies"
-                component={StackRoutes}
+                component={Movies}
                 options={{
                     title: 'Meus filmes',
                     drawerIcon: ({ focused, size, color }) => (
@@ -48,11 +46,11 @@ function Routes() {
                             size={size}
                             color={color}
                         />
-                    )
+                    ),
                 }}
             />
         </Drawer.Navigator>
-    )
+    );
 }
 
 export default Routes;
