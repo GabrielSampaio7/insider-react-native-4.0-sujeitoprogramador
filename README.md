@@ -7,5 +7,5 @@ Olá, este aplicativo foi feito de acordo com o evento React Native Insider 4.0 
 O backend foi construído em cima da API do site <a href="https://www.themoviedb.org/?language=pt-BR"> The MovieDB </a>
 
 # Imagens do Projeto - Rodado em um Motorola One Vision
-<img src="srcGit/img1.jpg" />
-<img src="srcGit/img2.jpg" />
+
+<img src="srcGit/img1.jpg" height="500"/> <img src="srcGit/img2.jpg" height="500"/>
